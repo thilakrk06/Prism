@@ -122,7 +122,16 @@
 </head>
 
 <body>
-    <?php include 'index.php' ?>
+    <div id="nav-placeholder"></div>
+
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            })
+            .catch(err => console.error('Navbar load error:', err));
+    </script>
     <div class="hierarchy-content">
         <h1 style=" color: aqua;">PRISM Club Hierarchy</h1>
         <div class="team-grid">
