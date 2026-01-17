@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prism|Department</title>
+    <style>
+        .dept-content {
+
+            margin: 30px auto;
+            max-width: 70vw;
+            background: rgba(244, 240, 240, 0.8);
+            opacity: 0.8;
+            width: 100%;
+            border-radius: 15px;
+            text-align: left;
+            padding: 5vmin 10vmin 10vmin 10vmin;
+            box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+            font-family: var(--Rubik);
+            z-index: 1;
+            overflow: auto;
+        }
+
+        .dept-h1 {
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Raleway', sans-serif;
+            padding: 0em 0;
+            font-size: 2.5em;
+        }
+
+        .dept-h2 {
+            text-align:left;
+            font-weight: bold;
+            font-family: 'Raleway', sans-serif;
+            padding: 0.4em 0;
+            font-size: 2em;
+        }
+
+        .dept-p {
+            font-size: 1.2em;
+
+        }
+    </style>
+</head>
+
+<body>
+    <?php include 'navbar.php' ?>
+    <div class="dept-content">
+        <h1 class="dept-h1">Electronics and Communication Engineering</h1>
+        <h2 class="dept-h2">Vision</h2>
+        <ul class="dept-p">
+            <li>To become a centre of excellence by producing high quality, self-motivated, creative, ethical engineers and technologists contributing effectively to industrial and societal needs</li>
+        </ul>
+
+        <h2 class="dept-h2">Mission</h2>
+        <ul class="dept-p">
+            <li><strong>M1</strong>To impart state of art value-based engineering education with relevant practical knowledge.</li><br>
+            <li><strong>M2</strong>To enable students to develop skills by the usage of modern tools through team work which enhances the entrepreneur skills, employability and multidisciplinary activities.</li><br>
+            <li><strong>M3</strong>To provide all possible support to promote research and development and to adapt them for higher education.</li><br>
+            <li><strong>M4</strong>To practice high standards of ethical values through societal commitment.</li>
+        </ul>
+    </div>
+</body>
+
+</html>

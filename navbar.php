@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar-top">
+            <div class="navbar-top-container">
+                <div class="logo">
+                    <a href="#"><img src="assets/ece logo.jpg" alt="Logo 3"></a>
+                    <a href="index.php"><img src="assets/instilogo.jpeg" alt="Logo 2"></a>
+                </div>
+
+                <!-- College Name -->
+                <div class="navbar-title">
+                    <p>Mallareddy College of Engineering</p>
+                    <p style="font-size: 1rem;">Department of Electronics and Communication Engineering</p>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar-bottom">
+            <div class="navbar-bottom-container">
+
+                <div class="dropdown">
+                    <a href="index.php" class="nav-link">Home</a>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="nav-link">About us</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Department.php" class="dropdown-item">Department</a></li>
+                        <li><a href="whyprism.php" class="dropdown-item">Why Prism </a></li>
+                        <!-- <li><a href="#" class="dropdown-item">Integrated Clubs</a></li> -->
+                        <!-- <li><a href="#" class="dropdown-item">Alumni</a></li>   -->
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <a href="hierarchy.php" class="nav-link">Hierarchy</a>
+
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="nav-link">Integrated Clubs</a>
+
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="nav-link">Events</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+</body>
+
+</html>
