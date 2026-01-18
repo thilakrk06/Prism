@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prism|Department</title>
+    <link rel="stylesheet" href="style.css">
+
     <style>
         .dept-content {
 
@@ -46,16 +48,52 @@
 </head>
 
 <body>
-    <div id="nav-placeholder"></div>
+    <div class="main">
+        <div class="navbar-top">
+            <div class="navbar-top-container">
+                <div class="logo">
+                    <a href="#"><img src="assets/ece logo.jpg" style="border-radius: 50%;" alt="Logo 3"></a>
+                    <a href="index.html"><img src="assets/Gemini_Generated_Image_2vou5t2vou5t2vou-removebg-preview.png" alt="Logo 2"></a>
+                </div>
 
-    <script>
-        fetch('navbar.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('nav-placeholder').innerHTML = data;
-            })
-            .catch(err => console.error('Navbar load error:', err));
-    </script>
+                <!-- College Name -->
+                <div class="navbar-title">
+                    <p>Mallareddy College of Engineering</p>
+                    <p style="font-size: 1rem;">Department of Electronics and Communication Engineering</p>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar-bottom">
+            <div class="navbar-bottom-container">
+
+                <div class="dropdown">
+                    <a href="index.html" class="nav-link">Home</a>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="nav-link">About us</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Department.html" class="dropdown-item">Department</a></li>
+                        <li><a href="whyprism.html" class="dropdown-item">Why Prism </a></li>
+                        <!-- <li><a href="#" class="dropdown-item">Integrated Clubs</a></li> -->
+                        <!-- <li><a href="#" class="dropdown-item">Alumni</a></li>   -->
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <a href="hierarchy.html" class="nav-link">Hierarchy</a>
+
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="nav-link">Integrated Clubs</a>
+
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="nav-link">Events</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
     <div class="dept-content">
         <h1 class="dept-h1">Prism</h1>
         <h2 class="dept-h2">Vision</h2>
