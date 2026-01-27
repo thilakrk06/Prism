@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
     <style>
         .club-content {
-
             margin: 30px auto;
             max-width: 50vw;
             background: rgba(244, 240, 240, 0.8);
@@ -21,6 +20,8 @@
             font-family: var(--Rubik);
             z-index: 1;
             overflow: auto;
+            display: flex;
+            flex-direction: column;
         }
 
         .club-h1 {
@@ -47,11 +48,11 @@
         }
 
         .team-grid {
-            display: grid;
+            display: flex;
+            flex:1;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 30px;
             margin-top: 40px;
-            align-items: start;
         }
 
         .service-card {
