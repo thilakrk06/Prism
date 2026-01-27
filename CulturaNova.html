@@ -12,7 +12,7 @@
             margin: 30px auto;
             max-width: 50vw;
             background: rgba(244, 240, 240, 0.8);
-            opacity: 0.8;
+            opacity: 1;
             width: 100%;
             border-radius: 15px;
             text-align: left;
@@ -26,7 +26,7 @@
         .club-h1 {
             text-align: center;
             font-weight: bold;
-            font-family: "IBM Plex Serif",serif;
+            font-family: "IBM Plex Serif", serif;
             padding: 0em 0;
             font-size: 2.5em;
             line-height: 1em;
@@ -36,7 +36,7 @@
         .club-h2 {
             text-align: center;
             font-weight: 500;
-            font-family: "IBM Plex Serif",serif;
+            font-family: "IBM Plex Serif", serif;
             padding: 0em 0 0.4em 0;
         }
 
@@ -46,9 +46,102 @@
             /* font-weight: 350; */
         }
 
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+            align-items: start;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+            height: 470px;
+            width: 350px;
+            margin: auto;
+            will-change: transform;
+            border-radius: 15px;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px) translateX(5px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            object-position: center;
+            flex-shrink: 0;
+        }
+
+        .card-body {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            padding: 25px;
+            padding-top: 20px;
+            min-height: 200px;
+        }
+
+        .x {
+            color: #333;
+            margin: 0 0 9px 0;
+            font-weight: bold;
+        }
+
+        .x:first-child {
+            font-family: "Newsreader", serif;
+        }
+
+        .x:nth-child(2) {
+            margin-bottom: 20px;
+            font-family: "Montserrat", sans-serif;
+            opacity: 70%;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 18px;
+        }
+
+        .contact-link:hover {
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+            transform: translateY(-3px);
+            color: white;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
         @media (max-width: 768px) {
             .club-content {
                 max-width: 90vw;
+            }
+
+            .service-card {
+                height: 480px;
+                /* width: 350px; */
             }
         }
     </style>
@@ -112,14 +205,29 @@
     </div>
 
     <div class="club-content">
-         <h1 class="club-h1">Culturanova </h1>
+        <h1 class="club-h1">Culturanova </h1>
         <h2 class="club-h2">(Cultural committee)</h2>
         <p class="club-p">
             Culturonova celebrates culture, traditions, and student talent.
             We organize dance, music, drama, and cultural events.
             The club brings energy, unity, and vibrant campus experiences.
         </p>
-
+        <div class="team-grid">
+            <div class="service-card">
+                <img class="card-img-top" src="integrated clubs images/Abhinaya_cultural.jpg" alt="Alka Abhinaya">
+                <div class="card-body">
+                    <h2 class="x">Alka Abhinaya </h2>
+                    <h3 class="x">Cultural lead</h3>
+                    <div class="contact-links">
+                        <a href="https://www.linkedin.com/in/alka-abhinaya-b2838731b"
+                            class="contact-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto: alkaabhinaya@gmail.com" class="contact-link"><i
+                                class="fas fa-envelope"></i></a>
+                        <a href="tel:+917816093274" class="contact-link"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 </body>
